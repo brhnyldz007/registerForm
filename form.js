@@ -1,8 +1,8 @@
 const form = document.getElementById('form');
-const username = getElementById('username');
-const email = getElementById('email');
-const password = getElementById('password');
-const password2 = getElementById('password2');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const password =document. getElementById('password');
+const password2 =  document.getElementById('password2');
 
 //Show input error messsage
 function showError(input, message){

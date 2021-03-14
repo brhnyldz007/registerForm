@@ -1,8 +1,8 @@
 const form = document.getElementById('form');
-const username = getElementById('username');
-const email = getElementById('email');
-const password = getElementById('password');
-const password2 = getElementById('password2');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const password =document.getElementById('password');
+const password2 = document.getElementById('password2');
 
 //Show input error messsage
 function showError(input, message){
@@ -27,15 +27,15 @@ function isValidEmail(email){
 //Event Listeners
 form.addEventListener('submit',function(e){
     e.preventDefault();
-    if(username.value === ''){
+    if(username.value === ""){
         showError(username, 'username is required');
     }else{
         showSuccess(username);
     }
-       if(email.value === ''){
+       if(email.value === ""){
         showError(email, 'email is required');
     }else if(!isValidEmail(email)){
-        showEror(email,'enail is not valid');
+        showError(email , 'email is not valid');
     }
     else{
         showSuccess(email);
@@ -45,7 +45,7 @@ form.addEventListener('submit',function(e){
     }else{
         showSuccess(password);
     }
-       if(password2.value === ''){
+       if(password2.value === ""){
         showError(password2, 'password is required');
     }else{
         showSuccess(password2);
